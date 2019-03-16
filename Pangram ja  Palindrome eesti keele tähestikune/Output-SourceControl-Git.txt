@@ -1,0 +1,46 @@
+﻿Opening repositories:
+C:\Users\Xaoxc\Desktop\Programmimine
+Commit e81bce40 created locally in repository C:\Users\Xaoxc\Desktop\Programmimine
+Opening repositories:
+C:\Users\Xaoxc\Desktop\Programmimine
+The calling thread cannot access this object because a different thread owns it.
+Pushing master
+Error: failed to push some refs to 'https://github.com/SandrinoJ/School'
+Error: hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Error encountered while pushing branch to the remote repository: rejected Updates were rejected because the remote contains work that you do not have locally. This is usually caused by another repository pushing to the same ref. You may want to first integrate the remote changes before pushing again.
+Pushing master
+Error: failed to push some refs to 'https://github.com/SandrinoJ/School'
+Error: hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Error encountered while pushing branch to the remote repository: rejected Updates were rejected because the remote contains work that you do not have locally. This is usually caused by another repository pushing to the same ref. You may want to first integrate the remote changes before pushing again.
+Fetching from origin
+Remote: Enumerating objects: 4, done.        
+Remote: Counting objects:  25% (1/4)           
+Remote: Counting objects:  50% (2/4)           
+Remote: Counting objects:  75% (3/4)           
+Remote: Counting objects: 100% (4/4)           
+Remote: Counting objects: 100% (4/4), done.        
+Remote: Compressing objects:  33% (1/3)           
+Remote: Compressing objects:  66% (2/3)           
+Remote: Compressing objects: 100% (3/3)           
+Remote: Compressing objects: 100% (3/3), done.        
+Warning: no common commits
+Remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0        
+Pushing master
+Error: failed to push some refs to 'https://github.com/SandrinoJ/School'
+Error: hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Error encountered while pushing branch to the remote repository: rejected Updates were rejected because the tip of your current branch is behind its remote counterpart. Integrate the remote changes  before pushing again.
+Fetching from origin
