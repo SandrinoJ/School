@@ -47,7 +47,7 @@ namespace Pangram_ja__Palindrome_eesti_keele_tähestikune
             return str.ToLower().Where(ch => Char.IsLetter(ch)).GroupBy(ch => ch).Count() == 26;
             /*
  return str.ToLower().Where(ch => Char.IsLetter(ch)).GroupBy(ch => ch).Count() == 32;
-            seda saab kasutada eesti keele tähestoiku puhul.
+            seda saab kasutada eesti keele tähestiku puhul.
             */
         }
     }
