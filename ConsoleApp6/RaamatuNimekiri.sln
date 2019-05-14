@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp6", "ConsoleApp6\ConsoleApp6.csproj", "{09B6FCDC-E5EC-442A-8865-64B855462DBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaamatuNimekiri", "ConsoleApp6\RaamatuNimekiri.csproj", "{09B6FCDC-E5EC-442A-8865-64B855462DBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

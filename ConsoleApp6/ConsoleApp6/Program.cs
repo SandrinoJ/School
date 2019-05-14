@@ -13,28 +13,43 @@ namespace Raamatuh
     {
         static void Main(string[] args)
         {
+            alg:
             Console.WriteLine("Sisesta tiitel:");
             string T = Console.ReadLine();
+            if (T.Length <= 3)
+            {
+                Console.WriteLine("Tiitel ei kehti");
+
+            }
             Console.WriteLine("Sisesta autor:");
             string A = Console.ReadLine();
+            if (A.Contains("0") || A.Contains("1") || A.Contains("2") || A.Contains("3") || A.Contains("4") || A.Contains("5") || A.Contains("6") || A.Contains("7") || A.Contains("8") || A.Contains("9"))
+            {
+                Console.WriteLine("Autor ei kehti");
+            }
             Console.WriteLine("Sisesta raamatu hind:");
             decimal H = decimal.Parse(Console.ReadLine());
+            if (H <= 0)
+            {
+                Console.WriteLine("Hind ei kehti");
+
+            }
 
             Raamat NimeKiri = new Raamat(T, A, H);
-            Console.WriteLine("Raamatu nimi: {0}", NimeKiri.raamatunimi);
-            Console.WriteLine("Tiitel: {0}", NimeKiri.raamatutiitel);
-            Console.WriteLine("Autor: {0}", NimeKiri.raamatuautor);
+            Console.WriteLine("Tiitel: {0}", NimeKiri.Raamatutiitel);
+            Console.WriteLine("Autor: {0}", NimeKiri.Raamatuautor);
             Console.WriteLine("Raamatu hind on {0}", NimeKiri.Raamatuhind);
+            Console.WriteLine("Raamatu esmatrüki hind on {0}", EsmaTrükk.EsmaPrint());
             Console.ReadKey();
+            goto alg;
         }
     }
     public class Raamat
     {
         //klassi muutujad
-        public string raamatunimi;
-        public string raamatutiitel;
-        public string raamatuautor;
-        public decimal raamatuhind;
+        public static string raamatutiitel;
+        public static string raamatuautor;
+        public static decimal raamatuhind;
         //konstruktor 
         public Raamat(string raamatutiitel, string raamatuautor, decimal raamatuhind)
         {
@@ -42,31 +57,20 @@ namespace Raamatuh
             Raamatuautor = raamatuautor;
             Raamatuhind = raamatuhind;
         }
-        public string Raamatunimi
-        {
-            get { return raamatunimi; }
-            set { raamatunimi = value; }
-        }
         public string Raamatutiitel { get { return raamatutiitel; } set { raamatutiitel = value; } }
         public string Raamatuautor { get { return raamatuautor; } set { raamatuautor = value; } }
-        public decimal Raamatuhind
-        {
-            get { return Raamatuhind; }
-            set
-            {
-                if (value < 0)
-                {
-                    value = 0;
-                }
-                else
-                    Raamatuhind = value;
-            }
-        }
+        public decimal Raamatuhind { get { return raamatuhind; } set { raamatuhind = value; } }
         public decimal RaamatuHind()
         {
             return Raamatuhind * 1.30m;
         }
 
     }
-
+    class EsmaTrükk
+    {
+        public static decimal EsmaPrint()
+        {
+            return Raamat.raamatuhind * 1.3m;
+        }
+    }
 }
